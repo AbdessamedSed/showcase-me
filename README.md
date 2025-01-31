@@ -1,5 +1,5 @@
 # showcase-me
-
+======
 A collection of my projects showcasing skills in machine learning, AI, data visualization, and full-stack development. Each project demonstrates my ability to create clean, efficient, and user-friendly solutions. Explore the work and feel free to connect for collaboration or inquiries.
 =======
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
