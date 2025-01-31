@@ -20,13 +20,13 @@ Clone the repository and install dependencies:
 ```bash
 git clone https://github.com/yourusername/showcase-me.git
 cd showcase-me
-npm install  # or yarn install
+npm install
 ```
 
 ### 🔥 Running the Development Server
 Start the local development server:
 ```bash
-npm run dev  # or yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
@@ -72,9 +72,9 @@ Contributions are welcome! If you find a bug or have an idea for improvement, fe
 
 ## 📩 Contact
 If you're interested in collaboration, feel free to reach out:
-- 📧 Email: your.email@example.com
-- 🔗 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- 📧 Email: ka_seddiki@esi.dz
+- 🔗 LinkedIn: [Your Profile](https://www.linkedin.com/in/abdessamed-seddiki-15019b211/)
+- 🐦 Twitter: [@yourhandle](https://x.com/Abdou28710)
 
 ---
 
