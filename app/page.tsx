@@ -3,7 +3,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import EducationSection from "./education/page";
 
 export default function Home() {
-  const content = "# This is a markdown heading";
 
   return (
     <section className="flex items-center justify-center min-h-screen bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-all duration-300">
@@ -11,7 +10,6 @@ export default function Home() {
         <div className="container max-w-1xl">
           <Intro />
           <div className="prose prose-lg dark:prose-invert mx-auto mt-6">
-            <MDXRemote source={content} />
           </div>
         </div>
       </div>

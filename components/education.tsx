@@ -8,9 +8,10 @@ interface EducationCardProps {
   endDate: string;
   degree: string;
   institution: string;
+  institutionCity: string;
   institutionLogo: string; // Add Institution Logo
   major: string;
-  courses: string[];
+  courseDescription: string; // New field for course details
 }
 
 const EducationCard: React.FC<EducationCardProps> = ({
@@ -18,9 +19,10 @@ const EducationCard: React.FC<EducationCardProps> = ({
   endDate,
   degree,
   institution,
+  institutionCity,
   institutionLogo,
   major,
-  courses,
+  courseDescription, // Using this instead of listing courses
 }) => {
   return (
     <motion.div
@@ -41,24 +43,23 @@ const EducationCard: React.FC<EducationCardProps> = ({
           {/* Institution and Major */}
           <div className="text-md text-gray-700 dark:text-gray-300 mt-4">
             <p className="text-2xl font-semibold">{institution}</p>
+            <p className="text-xl font-semibold">{institutionCity}</p>
             <p className="mt-2 text-xl font-medium">Major: {major}</p>
           </div>
 
-          {/* Relevant Courses */}
-          <div className="mt-6 flex flex-col items-center">
+          {/* Coursework Description */}
+          <div className="mt-6">
             <h3 className="text-2xl font-bold text-blue-600 dark:text-purple-400 mb-4">
-              Relevant Courses
+              Coursework Summary
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300 w-full">
-              {courses.map((course, index) => (
-                <p key={index} className="text-sm">{course}</p>
-              ))}
-            </div>
+            <p className="text-xl text-gray-700 dark:text-gray-300">
+              {courseDescription}
+            </p>
           </div>
         </div>
 
         {/* Right Section: Institution Logo */}
-        <div className="w-28 h-28 lg:w-40 lg:h-40 flex-shrink-0">
+        <div className="w-28 h-28 lg:w-40 lg:h-40 flex-shrink-0 flex items-center justify-center">
           <img
             src={institutionLogo}
             alt={`${institution} Logo`}
