@@ -1,6 +1,6 @@
 # Showcase Me
 
-A curated collection of my projects demonstrating expertise in **Machine Learning, Artificial Intelligence, Data Visualization, and Full-Stack Development**. Each project showcases my ability to create **clean, efficient, and user-friendly solutions**. Feel free to explore my work and connect for **collaboration or inquiries**.
+A curated collection of my projects demonstrating expertise in **Research, Problem solving, Critical Thinking, Artificial Intelligence, Data Visualization, Security and Full-Stack Development**. Each project showcases my ability to create **clean, efficient, and user-friendly solutions**. Feel free to explore my work and connect for **collaboration or inquiries**.
 
 ---
 
