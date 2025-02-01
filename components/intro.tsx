@@ -12,10 +12,27 @@ import {
   FaResearchgate, 
   FaGithub
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Intro() {
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "pdf/intro/CV.pdf"; // Replace with the actual path to your CV
+    link.download = "Abdessamed_Seddiki_CV.pdf";
+    link.click();
+  };
+
+  // Function to handle Recommendation download
+  const handleDownloadRecommendation = () => {
+    const link = document.createElement("a");
+    link.href = "pdf/intro/Recommendations.pdf"; // Replace with the actual path to your recommendation
+    link.download = "Abdessamed_Seddiki_Recommendation.pdf";
+    link.click();
+  };
+
   return (
-    <section className="flex flex-col items-center gap-10 px-6 py-24 md:gap-16">
+    <section className="flex flex-col items-center gap-10 px-8 py-24 mt-14 md:gap-16">
       {/* Main Content */}
       <div className="flex flex-col-reverse items-center gap-10 md:flex-row md:items-center md:gap-16">
         {/* Text Section */}
@@ -52,6 +69,27 @@ export default function Intro() {
             been one of humanity’s greatest challenges. Exploring the gaps where
             logic, belief, and uncertainty meet is my true passion.
           </p>
+
+          {/* Buttons Section */}
+          <motion.div
+            className="flex flex-wrap gap-4 mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
+            <button
+              onClick={handleDownloadCV}
+              className="px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl"
+            >
+              Download my CV
+            </button>
+            <button
+              onClick={handleDownloadRecommendation}
+              className="px-6 py-3 bg-gradient-to-r from-green-500 to-teal-600 text-white font-semibold rounded-lg hover:from-green-600 hover:to-teal-700 transition-all shadow-lg hover:shadow-xl"
+            >
+              Download Recommendation
+            </button>
+          </motion.div>
         </motion.div>
 
         {/* Image Section */}
@@ -92,11 +130,11 @@ export default function Intro() {
         <a href="https://www.github.com/AbdessamedSed" target="_blank" className="text-gray-600 dark:text-gray-300 text-3xl hover:text-blue-500 transition">
           <FaGithub />
         </a>
+        <a href="https://x.com/Abdou28710" target="_blank" className="text-gray-600 dark:text-gray-300 text-3xl hover:text-blue-500 transition">
+          <FaXTwitter />
+        </a>
         <a href="https://www.facebook.com/abdessamed.seddiki.75/" target="_blank" className="text-gray-600 dark:text-gray-300 text-3xl hover:text-blue-500 transition">
           <FaFacebook />
-        </a>
-        <a href="https://twitter.com" target="_blank" className="text-gray-600 dark:text-gray-300 text-3xl hover:text-blue-500 transition">
-          <FaTwitter />
         </a>
         <a href="https://instagram.com" target="_blank" className="text-gray-600 dark:text-gray-300 text-3xl hover:text-blue-500 transition">
           <FaInstagram />

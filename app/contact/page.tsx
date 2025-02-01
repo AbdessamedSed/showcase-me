@@ -2,12 +2,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaResearchgate, FaGraduationCap } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaInstagram, FaGithub, FaResearchgate, FaGraduationCap, FaFacebook } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
     <motion.div 
-      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#1a1a1a] to-[#2c3e50] p-6 text-center"
+      className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-700 dark:bg-gray-900 dark:text-gray-100 p-10 mt-5 text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -22,7 +23,7 @@ const Contact = () => {
       </motion.h1>
       
       <motion.p 
-        className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed"
+        className="text-xl mb-8 max-w-2xl leading-relaxed"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -32,7 +33,7 @@ const Contact = () => {
 
       {/* Contact Info */}
       <motion.div 
-        className="text-gray-300 text-lg mb-8 space-y-2"
+        className=" text-lg mb-8 space-y-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
@@ -61,25 +62,28 @@ const Contact = () => {
 
       {/* Social Media Icons */}
       <motion.div 
-        className="flex gap-8 text-4xl text-gray-300"
+        className="flex gap-8 text-4xl"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >
-        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#0077b5] transition-colors">
+        <a href="https://www.linkedin.com/in/abdessamed-seddiki-15019b211/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0077b5] transition-colors">
           <FaLinkedin />
         </a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#4285f4] transition-colors">
+        <a href="https://scholar.google.com/citations?user=K86_jrkAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer" className="hover:text-[#4285f4] transition-colors">
           <FaGraduationCap />
         </a>
-        <a href="https://www.researchgate.net" target="_blank" rel="noopener noreferrer" className="hover:text-[#00cc88] transition-colors">
+        <a href="https://www.researchgate.net/profile/Abdessamed-Seddiki?ev=hdr_xprf" target="_blank" rel="noopener noreferrer" className="hover:text-[#00cc88] transition-colors">
           <FaResearchgate />
         </a>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#f5f5f5] transition-colors">
+        <a href="https://github.com/AbdessamedSed" target="_blank" rel="noopener noreferrer" className="hover:text-[#f5f5f5] transition-colors">
           <FaGithub />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#1da1f2] transition-colors">
-          <FaTwitter />
+        <a href="https://x.com/Abdou28710" target="_blank" rel="noopener noreferrer" className="hover:text-[#1da1f2] transition-colors">
+          <FaXTwitter />
+        </a>
+        <a href="https://www.facebook.com/abdessamed.seddiki.75/" target="_blank" rel="noopener noreferrer" className="hover:text-[#1da1f2] transition-colors">
+          <FaFacebook />
         </a>
         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#e1306c] transition-colors">
           <FaInstagram />
