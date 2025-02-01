@@ -41,24 +41,28 @@ const ContactPage = () => {
 
   return (
     <motion.div 
-      className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-600 to-blue-500 p-6"
+      className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
       {/* Page Title */}
       <motion.h1 
-        className="text-5xl font-bold text-white mb-8"
+        className="text-5xl font-bold text-white mt-20 py-10"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        Contact Me
+
+        <span className="bg-gradient-to-r from-teal-500 to-cyan-600 bg-clip-text text-transparent font-bold">
+            Contact Me
+        </span>
+
       </motion.h1>
 
       {/* Contact Form */}
       <motion.form 
-        className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-xl w-full max-w-lg"
+        className="bg-white dark:bg-gray-900 p-8 rounded-xl shadow-xl w-full max-w-lg "
         onSubmit={handleSubmit}
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
