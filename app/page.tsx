@@ -1,6 +1,4 @@
 import Intro from "@/components/intro";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import EducationSection from "./education/page";
 
 export default function Home() {
 
