@@ -18,7 +18,7 @@ export default function Intro() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "pdf/intro/CV.pdf"; // Replace with the actual path to your CV
+    link.href = "pdf/intro/CV.pdf";
     link.download = "Abdessamed_Seddiki_CV.pdf";
     link.click();
   };
@@ -26,7 +26,7 @@ export default function Intro() {
   // Function to handle Recommendation download
   const handleDownloadRecommendation = () => {
     const link = document.createElement("a");
-    link.href = "pdf/intro/Recommendations.pdf"; // Replace with the actual path to your recommendation
+    link.href = "pdf/intro/Recommendations.pdf";
     link.download = "Abdessamed_Seddiki_Recommendation.pdf";
     link.click();
   };
